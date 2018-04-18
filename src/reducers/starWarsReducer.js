@@ -9,10 +9,10 @@ const initialState = {
 };
 export const charsReducer = (state = initialState, action) => {
   switch (action.type) {
-    case "CHARS_FETCHING": {
+    case FETCHING: {
       return {...state, fetching: true}
     }
-    case "CHARS_FETCHED": {
+    case FETCHED: {
       return {
         ...state,
         fetching: false,
@@ -20,7 +20,7 @@ export const charsReducer = (state = initialState, action) => {
         chars: action.payload,
       }
     }
-    case "CHARS_FETCH_ERROR": {
+    case ERROR: {
       return {...state, fetching: false, error: action.payload}
     }
     // Fill me in with the important reducers
