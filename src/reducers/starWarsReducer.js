@@ -1,5 +1,9 @@
 import /* we need our action types here*/ '../actions';
 const initialState = {
+    chars: [],
+    fetching: false,
+    fetched: false,
+    error: null
   // define a few properties here.
   // Array chars, Boolean fetching, Boolean fetched, null error.
 };
