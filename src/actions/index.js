@@ -14,7 +14,7 @@ export const ERROR = "FETERRORCHING"
 export function fetch() {
     return(dispatch) => {
         dispatch({type: FETCHING})
-        axios.get('https://swapi.co/api/people')
+        axios.get('https://swapi.co/api/people/')
         .then((response) => {
             dispatch({type: FETCHED, payload: response.data})
         })
