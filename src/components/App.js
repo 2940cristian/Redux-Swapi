@@ -8,10 +8,11 @@ import {fetch} from '../actions';
 class App extends Component {
   componentDidMount() {
     // call our action
-    console.log('component',this.props)
     this.props.fetch()
   }
   render() {
+    console.log('fetched',this.props)
+
     return (
       <div className="App">
         {this.props.fetching ? (

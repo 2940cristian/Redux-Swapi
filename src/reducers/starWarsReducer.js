@@ -1,8 +1,8 @@
 import {FETCHING, FETCHED, ERROR} from '../actions';
 const initialState = {
-    chars: [],
     fetching: false,
     fetched: false,
+    chars: [],
     error: null
   // define a few properties here.
   // Array chars, Boolean fetching, Boolean fetched, null error.

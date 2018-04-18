@@ -16,6 +16,7 @@ export function fetch() {
         dispatch({type: FETCHING})
         axios.get('https://swapi.co/api/people/')
         .then((response) => {
+            console.log('respone',response.data)
             dispatch({type: FETCHED, payload: response.data})
         })
         .catch((err) => {
